@@ -1,0 +1,81 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+        x:Class="perfumery.OrderWindow"
+        Title="OrderWindow">
+	<Grid RowDefinitions="auto,*,auto"
+				  Margin="15">
+
+		<TextBlock Grid.Row="0"
+				   Text="Корзина"
+				   FontSize="24"
+				   FontWeight="Bold"
+				   Margin="0,0,0,15"/>
+
+		<ListBox x:Name="OrderList"
+				 Grid.Row="1">
+			<ListBox.ItemTemplate>
+				<DataTemplate>
+					<Border BorderBrush="Gray"
+							BorderThickness="1"
+							Padding="10"
+							Margin="0,0,0,10">
+						<StackPanel Spacing="5">
+
+							<TextBlock Text="{Binding ProductName}"
+									   FontWeight="Bold"
+									   FontSize="16"/>
+
+							<TextBlock>
+								<Run Text="Количество: "/>
+								<Run Text="{Binding Count}"/>
+							</TextBlock>
+
+							<TextBlock>
+								<Run Text="Цена: "/>
+								<Run Text="{Binding FinalCostText}"/>
+							</TextBlock>
+
+							<TextBlock>
+								<Run Text="Сумма: "/>
+								<Run Text="{Binding TotalText}"/>
+							</TextBlock>
+
+							<StackPanel Orientation="Horizontal"
+										Spacing="10">
+								<Button Content="+"
+										Click="Plus_Click"/>
+								<Button Content="-"
+										Click="Minus_Click"/>
+								<Button Content="Удалить"
+										Click="Delete_Click"/>
+							</StackPanel>
+
+						</StackPanel>
+					</Border>
+				</DataTemplate>
+			</ListBox.ItemTemplate>
+		</ListBox>
+
+		<StackPanel Grid.Row="2"
+					HorizontalAlignment="Right"
+					Spacing="10"
+					Margin="0,15,0,0">
+
+			<TextBlock x:Name="TotalText"
+					   FontSize="18"
+					   FontWeight="Bold"/>
+
+			<Button Content="Подтвердить заказ"
+					Width="180"
+					Click="CreateOrder_Click"/>
+
+			<Button Content="Закрыть"
+					Width="180"
+					Click="Close_Click"/>
+
+		</StackPanel>
+	</Grid>
+</Window>

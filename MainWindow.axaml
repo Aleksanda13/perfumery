@@ -1,0 +1,77 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="900" d:DesignHeight="450"
+        x:Class="perfumery.MainWindow"
+        Title="perfumery">
+	<Grid VerticalAlignment="Top" HorizontalAlignment="Stretch"
+		  ColumnDefinitions="auto,*" RowDefinitions="auto,*,*,*">
+		<StackPanel Grid.Row="0" Grid.Column="0"
+					HorizontalAlignment="Left"
+					Orientation="Horizontal" Margin="20">
+			<Image Source="avares://perfumery/Images/picture.png" Height="40"/>
+			<TextBlock Text="Парфюмерия" FontSize="22" VerticalAlignment="Center"/>
+		</StackPanel>
+		<Separator Grid.ColumnSpan="2" VerticalAlignment="Bottom"/>
+
+		<StackPanel Grid.Column="0" Grid.Row="2" Margin="20" Spacing="5">
+			<Button Content="Корзина" x:Name="OrderButton" Click="ViewOrder_Click" IsVisible="False"/>
+		</StackPanel>
+
+		<StackPanel Grid.Column="1" Grid.Row="1" Orientation="Horizontal">
+			<TextBox x:Name="SearchBox" Watermark="Поиск..."
+					 Width="300"
+					 TextChanged="TextBox_TextChanged"/>
+			<ComboBox x:Name="DiscountBox" SelectionChanged="ComboBox_SelectionChanged"/>
+			<ComboBox x:Name="ManufacturerBox" SelectionChanged="ComboBox_SelectionChanged"/>
+			<ComboBox x:Name="SortBox" SelectionChanged="ComboBox_SelectionChanged">
+				<ComboBoxItem Content="Цена| по возрастанию"/>
+				<ComboBoxItem Content="Цена| по убыванию"/>
+			</ComboBox>
+			<TextBlock x:Name="CountBox" FontWeight="Bold"/>
+		</StackPanel>
+		<ScrollViewer Grid.Column="1" Grid.Row="2" VerticalAlignment="Top"
+					  Height="400" Margin="0,20">
+			<ListBox x:Name="ProductList" SelectionChanged="ListBox_SelectionChanged">
+				<ListBox.ItemTemplate>
+					<DataTemplate>
+						<Border BorderBrush="Black" BorderThickness="1" Background="{Binding BackgroundCard}">
+							<Grid ColumnDefinitions="150, *, 120">
+								<Border BorderBrush="Black" BorderThickness="1" Grid.Column="0">
+									<Image Source="{Binding LoadImage}" />
+								</Border>
+								<Border BorderBrush="Black" BorderThickness="1" Grid.Column="1">
+									<StackPanel Spacing="5" Margin="10">
+										<TextBlock Text="{Binding ProductName}" FontWeight="Bold" FontSize="20"/>
+										<TextBlock>
+											<Run Text="Категория: "/>
+											<Run Text="{Binding Category.CategoryName}"/>
+										</TextBlock>
+										<TextBlock>
+											<Run Text="Производитель: "/>
+											<Run Text="{Binding Manufacturer.ManufacturerName}"/>
+										</TextBlock>
+										<TextBlock Text="{Binding Description}" TextWrapping="Wrap"/>
+										<StackPanel Orientation="Horizontal">
+											<TextBlock Text="{Binding CostText}"
+													   IsVisible="{Binding HasDiscount}"
+													   TextDecorations="Strikethrough"
+													   Foreground="Red"/>
+											<TextBlock Text="{Binding FinalCostText}"/>
+										</StackPanel>
+										<Button Content="В корзину" Click="AddToOrder_Click"/>
+									</StackPanel>
+								</Border>
+								<Border BorderBrush="Black" BorderThickness="1" Grid.Column="2">
+									<TextBlock Text="{Binding DiscountText}" VerticalAlignment="Center"
+											   HorizontalAlignment="Center"/>
+								</Border>
+							</Grid>
+						</Border>
+					</DataTemplate>
+				</ListBox.ItemTemplate>
+			</ListBox>
+		</ScrollViewer>
+	</Grid>
+</Window>

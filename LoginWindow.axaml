@@ -1,0 +1,33 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+        x:Class="perfumery.LoginWindow"
+        Title="LoginWindow">
+	<Grid VerticalAlignment="Center" HorizontalAlignment="Center">
+		<Border BorderBrush="YellowGreen" BorderThickness="3"
+				CornerRadius="10" Width="400">
+			<Grid RowDefinitions="auto,*,*,*,*">
+				<StackPanel Grid.Row="0" Orientation="Horizontal" Margin="20">
+					<Image Source="avares://perfumery/Images/picture.png" Height="40"/>
+					<TextBlock Text="Парфюмерия" FontSize="22"/>
+				</StackPanel>
+				<TextBox Grid.Row="1" x:Name="LoginBox"
+						 Margin="15,0" Watermark="Введите логин"/>
+				<Grid Grid.Row="2" ColumnDefinitions="*, auto">
+					<TextBox Grid.Column="0" x:Name="PasswordBox"
+						 Margin="15" Watermark="Введите пароль"
+						PasswordChar="*"/>
+					<TextBox  Grid.Column="0" x:Name="PasswordVisibleBox"
+						 Margin="15" IsVisible="false"/>
+					<Button Grid.Column="1" Margin="0,0,15,0" Click="Toggle_Password">
+						<Image Source="avares://perfumery/Images/picture.png" Height="20"/>
+					</Button>
+				</Grid>
+				<Button Grid.Row="3" Margin="15,0" Content="Войти" Click="Login_Click"/>
+				<Button Grid.Row="4" Margin="15,5,15,10" Content="Войти как гость" Click="Guest_Click"/>
+			</Grid>
+		</Border>
+	</Grid>
+</Window>

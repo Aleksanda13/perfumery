@@ -1,0 +1,89 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="600" d:DesignHeight="550"
+        x:Class="perfumery.AddEditProductWindow"
+        Title="AddEditProductWindow">
+	<Grid RowDefinitions="auto,*" ColumnDefinitions="auto,*"
+		  VerticalAlignment="Top" HorizontalAlignment="Center">
+		<StackPanel Grid.Row="0" Grid.Column="0"
+			HorizontalAlignment="Left"
+			Orientation="Horizontal" Margin="20">
+			<Image Source="avares://perfumery/Images/picture.png" Height="40"/>
+			<TextBlock Text="Парфюмерия" FontSize="22" VerticalAlignment="Center"/>
+		</StackPanel>
+		<TextBlock x:Name="TitleText" FontSize="22" 
+				   VerticalAlignment="Center"
+				   HorizontalAlignment="Right"/>
+		<ScrollViewer Grid.Column="0" Grid.Row="1" Height="650" VerticalAlignment="Top">
+			<StackPanel Margin="20" Spacing="5">
+				<TextBlock Text="ID Продукта:" x:Name="IdBoxLabel" IsVisible="false"/>
+				<TextBox x:Name="IdBox" IsVisible="false"/>
+				<TextBlock Text="Артикул продукта:"/>
+				<TextBox x:Name="ArticleBox" Watermark="не больше 6 символов"/>
+				<TextBlock Text="Название продукта:"/>
+				<TextBox x:Name="NameBox"/>
+				<TextBlock Text="Единица измерения:"/>
+				<ComboBox x:Name="UnitBox">
+					<ComboBox.ItemTemplate>
+						<DataTemplate>
+							<TextBlock Text="{Binding UnitName}"/>
+						</DataTemplate>
+					</ComboBox.ItemTemplate>
+				</ComboBox>
+				<TextBlock Text="Производитель:"/>
+				<ComboBox x:Name="ManufacturerBox">
+					<ComboBox.ItemTemplate>
+						<DataTemplate>
+							<TextBlock Text="{Binding ManufacturerName}"/>
+						</DataTemplate>
+					</ComboBox.ItemTemplate>
+				</ComboBox>
+				<TextBlock Text="Поставщик:"/>
+				<ComboBox x:Name="SupplierBox">
+					<ComboBox.ItemTemplate>
+						<DataTemplate>
+							<TextBlock Text="{Binding SupplierName}"/>
+						</DataTemplate>
+					</ComboBox.ItemTemplate>
+				</ComboBox>
+				<TextBlock Text="Категория:"/>
+				<ComboBox x:Name="CategoryBox" PlaceholderText="Категория">
+					<ComboBox.ItemTemplate>
+						<DataTemplate>
+							<TextBlock Text="{Binding CategoryName}"/>
+						</DataTemplate>
+					</ComboBox.ItemTemplate>
+				</ComboBox>
+				<TextBlock Text="Цена продукта:"/>
+				<TextBox x:Name="CostBox"/>
+				<Grid ColumnDefinitions="auto,*" RowDefinitions="auto,*">
+					<TextBlock Text="Максимальная скидка:" Grid.Column="0" Grid.Row="0" Margin="0,0,10,0"/>
+					<TextBox x:Name="MaxDiscountBox" Grid.Column="0" Grid.Row="1" Margin="0,0,10,0"/>
+					<TextBlock Text="Текущая скидка:" Grid.Column="1" Grid.Row="0"/>
+					<TextBox x:Name="DiscountBox" Grid.Column="1" Grid.Row="1"/>
+				</Grid>
+				<TextBlock Text="Количество на складе:"/>
+				<TextBox x:Name="QuantityBox"/>
+				<TextBlock Text="Описание:"/>
+				<TextBox x:Name="DescriptionBox" TextWrapping="Wrap" Height="40"/>
+			</StackPanel>
+		</ScrollViewer>
+		<StackPanel Grid.Column="1" Grid.Row="1" Margin="20" HorizontalAlignment="Center">
+			<TextBlock Text="Выберите изображение" HorizontalAlignment="Center"/>
+			<Border BorderBrush="Black" BorderThickness="1" MinHeight="200" MinWidth="250">
+				<Image x:Name="ImageSorce" Height="200"/>
+			</Border>
+			<TextBlock x:Name="ImageName" HorizontalAlignment="Center"/>
+			<Button Content="Выбрать изображение" Click="ChooseImage_Click"/>
+			<Separator></Separator>
+			<StackPanel Spacing="5" Margin="0,20">
+				<Button Content="Сохранить" Click="SaveProduct_Click"/>
+				<Button Content="Удалить" Background="Red" Foreground="White" Click="Delete_Click"/>
+				<Button Content="Назад" Click="Cancel_Click"/>
+			</StackPanel>
+	
+		</StackPanel>
+	</Grid>
+</Window>
