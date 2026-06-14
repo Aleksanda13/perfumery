@@ -150,7 +150,7 @@ public partial class AddEditProductWindow : Window
     }
 
 
-    private async Task<string> SaveImage_Click(string source)
+    private async Task<string> SaveImage(string source)
     {
         var folder = Path.Combine(AppContext.BaseDirectory, "Images", "Product");
         Directory.CreateDirectory(folder);
@@ -190,6 +190,49 @@ public partial class AddEditProductWindow : Window
         {
             await ShowError("Введите числовые значения");
             return;
+        }
+        try
+        {
+            await using var db = new PerfumeryContext();
+
+            string imageName = _savedImageName;
+
+            if (!string.IsNullOrWhiteSpace(_selectedImagePath))
+            {
+                imageName = await SaveImage(_selectedImagePath);
+            }
+
+            Product p;
+
+            if (_productId.HasValue)
+            {
+                p = await db.Products.FirstAsync(x => x.ProductId == _productId.Value);
+            }
+            else
+            {
+                p = new Product();
+                db.Products.Add(p);
+            }
+
+            p.Article = ArticleBox.Text.Trim();
+            p.ProductName = NameBox.Text.Trim();
+            p.CategoryId = ((Category)CategoryBox.SelectedItem).CategoryId;
+            p.UnitId = ((Unit)UnitBox.SelectedItem).UnitId;
+            p.ManufacturerId = ((Manufacturer)ManufacturerBox.SelectedItem).ManufacturerId;
+            p.SupplierId = ((Supplier)SupplierBox.SelectedItem).SupplierId;
+            p.Cost = cost;
+            p.QuantityInStock = quantity;
+            p.CurrentDiscount = discount;
+            p.Description = DescriptionBox.Text?.Trim();
+            p.ImagePath = imageName;
+
+            await db.SaveChangesAsync();
+
+            Close();
+        }
+        catch (Exception ex)
+        {
+            await ShowError("Ошибка сохранения\n" + ex.Message);
         }
     }
 
