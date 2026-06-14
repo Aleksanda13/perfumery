@@ -180,6 +180,11 @@ namespace perfumery
             await LoadProductAsync();
         }
 
+        private async void Orders_Click(object? sender, RoutedEventArgs e)
+        {
+            var window = new OrdersListWindow();
+            await window.ShowDialog(this);
+        }
         private async void TextBox_TextChanged(object? sender, TextChangedEventArgs e)
         {
             await LoadProductAsync();

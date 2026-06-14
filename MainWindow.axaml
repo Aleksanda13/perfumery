@@ -17,6 +17,8 @@
 
 		<StackPanel Grid.Column="0" Grid.Row="2" Margin="20" Spacing="5">
 			<Button Content="Корзина" x:Name="OrderButton" Click="ViewOrder_Click" IsVisible="False"/>
+			<Button Content="Список" x:Name="OrdersListButton" 
+					Click="Orders_Click"/>
 		</StackPanel>
 
 		<StackPanel Grid.Column="1" Grid.Row="1" Orientation="Horizontal">

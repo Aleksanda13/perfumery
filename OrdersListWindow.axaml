@@ -1,0 +1,58 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+        x:Class="perfumery.OrdersListWindow"
+        Title="OrdersListWindow">
+	<ScrollViewer>
+		<ListBox x:Name="OrdersList">
+			<ListBox.ItemTemplate>
+				<DataTemplate>
+
+					<Border BorderBrush="Black"
+                            BorderThickness="1"
+                            Margin="5"
+                            Padding="10">
+
+						<StackPanel>
+
+							<TextBlock FontWeight="Bold">
+								<Run Text="Заказ №"/>
+								<Run Text="{Binding OrderId}"/>
+							</TextBlock>
+
+							<TextBlock>
+								<Run Text="Клиент: "/>
+								<Run Text="{Binding ClientName}"/>
+							</TextBlock>
+
+							<TextBlock>
+								<Run Text="Статус: "/>
+								<Run Text="{Binding StatusName}"/>
+							</TextBlock>
+
+							<TextBlock>
+								<Run Text="Дата создания: "/>
+								<Run Text="{Binding CreateAtText}"/>
+							</TextBlock>
+
+							<TextBlock>
+								<Run Text="Сумма: "/>
+								<Run Text="{Binding TotalPriceText}"/>
+							</TextBlock>
+
+							<TextBlock TextWrapping="Wrap">
+								<Run Text="Товары: "/>
+								<Run Text="{Binding ProductsText}"/>
+							</TextBlock>
+
+						</StackPanel>
+
+					</Border>
+
+				</DataTemplate>
+			</ListBox.ItemTemplate>
+		</ListBox>
+	</ScrollViewer>
+</Window>

@@ -3,16 +3,32 @@
   "WorkspaceRootPath": "C:\\Users\\User\\source\\repos\\perfumery\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{6FC249A4-0595-4F04-804B-B066F7D69E71}|perfumery.csproj|c:\\users\\user\\source\\repos\\perfumery\\addeditproductwindow.axaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6FC249A4-0595-4F04-804B-B066F7D69E71}|perfumery.csproj|solutionrelative:addeditproductwindow.axaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{6FC249A4-0595-4F04-804B-B066F7D69E71}|perfumery.csproj|c:\\users\\user\\source\\repos\\perfumery\\mainwindow.axaml||{6D5344A2-2FCD-49DE-A09D-6A14FD1B1224}",
+      "RelativeMoniker": "D:0:0:{6FC249A4-0595-4F04-804B-B066F7D69E71}|perfumery.csproj|solutionrelative:mainwindow.axaml||{6D5344A2-2FCD-49DE-A09D-6A14FD1B1224}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{6FC249A4-0595-4F04-804B-B066F7D69E71}|perfumery.csproj|c:\\users\\user\\source\\repos\\perfumery\\mainwindow.axaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6FC249A4-0595-4F04-804B-B066F7D69E71}|perfumery.csproj|solutionrelative:mainwindow.axaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6FC249A4-0595-4F04-804B-B066F7D69E71}|perfumery.csproj|c:\\users\\user\\source\\repos\\perfumery\\mainwindow.axaml||{6D5344A2-2FCD-49DE-A09D-6A14FD1B1224}",
-      "RelativeMoniker": "D:0:0:{6FC249A4-0595-4F04-804B-B066F7D69E71}|perfumery.csproj|solutionrelative:mainwindow.axaml||{6D5344A2-2FCD-49DE-A09D-6A14FD1B1224}"
+      "AbsoluteMoniker": "D:0:0:{6FC249A4-0595-4F04-804B-B066F7D69E71}|perfumery.csproj|c:\\users\\user\\source\\repos\\perfumery\\orderslistwindow.axaml||{6D5344A2-2FCD-49DE-A09D-6A14FD1B1224}",
+      "RelativeMoniker": "D:0:0:{6FC249A4-0595-4F04-804B-B066F7D69E71}|perfumery.csproj|solutionrelative:orderslistwindow.axaml||{6D5344A2-2FCD-49DE-A09D-6A14FD1B1224}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6FC249A4-0595-4F04-804B-B066F7D69E71}|perfumery.csproj|c:\\users\\user\\source\\repos\\perfumery\\orderslistwindow.axaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6FC249A4-0595-4F04-804B-B066F7D69E71}|perfumery.csproj|solutionrelative:orderslistwindow.axaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6FC249A4-0595-4F04-804B-B066F7D69E71}|perfumery.csproj|c:\\users\\user\\source\\repos\\perfumery\\models\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6FC249A4-0595-4F04-804B-B066F7D69E71}|perfumery.csproj|solutionrelative:models\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6FC249A4-0595-4F04-804B-B066F7D69E71}|perfumery.csproj|c:\\users\\user\\source\\repos\\perfumery\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6FC249A4-0595-4F04-804B-B066F7D69E71}|perfumery.csproj|solutionrelative:models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6FC249A4-0595-4F04-804B-B066F7D69E71}|perfumery.csproj|c:\\users\\user\\source\\repos\\perfumery\\addeditproductwindow.axaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6FC249A4-0595-4F04-804B-B066F7D69E71}|perfumery.csproj|solutionrelative:addeditproductwindow.axaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{6FC249A4-0595-4F04-804B-B066F7D69E71}|perfumery.csproj|c:\\users\\user\\source\\repos\\perfumery\\orderwindow.axaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -21,10 +37,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{6FC249A4-0595-4F04-804B-B066F7D69E71}|perfumery.csproj|c:\\users\\user\\source\\repos\\perfumery\\usersession.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6FC249A4-0595-4F04-804B-B066F7D69E71}|perfumery.csproj|solutionrelative:usersession.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6FC249A4-0595-4F04-804B-B066F7D69E71}|perfumery.csproj|c:\\users\\user\\source\\repos\\perfumery\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6FC249A4-0595-4F04-804B-B066F7D69E71}|perfumery.csproj|solutionrelative:models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -34,8 +46,46 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 8,
+          "SelectedChildIndex": 16,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "OrdersListWindow.axaml",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\perfumery\\OrdersListWindow.axaml",
+              "RelativeDocumentMoniker": "OrdersListWindow.axaml",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\perfumery\\OrdersListWindow.axaml",
+              "RelativeToolTip": "OrdersListWindow.axaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-06-14T17:44:02.871Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "OrdersListWindow.axaml.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\perfumery\\OrdersListWindow.axaml.cs",
+              "RelativeDocumentMoniker": "OrdersListWindow.axaml.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\perfumery\\OrdersListWindow.axaml.cs",
+              "RelativeToolTip": "OrdersListWindow.axaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-14T17:44:02.734Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Order.cs",
+              "DocumentMoniker": "C:\\Users\\User\\source\\repos\\perfumery\\Models\\Order.cs",
+              "RelativeDocumentMoniker": "Models\\Order.cs",
+              "ToolTip": "C:\\Users\\User\\source\\repos\\perfumery\\Models\\Order.cs",
+              "RelativeToolTip": "Models\\Order.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAmwCQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-14T17:40:59.249Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
@@ -70,20 +120,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 6,
               "Title": "AddEditProductWindow.axaml.cs",
               "DocumentMoniker": "C:\\Users\\User\\source\\repos\\perfumery\\AddEditProductWindow.axaml.cs",
               "RelativeDocumentMoniker": "AddEditProductWindow.axaml.cs",
               "ToolTip": "C:\\Users\\User\\source\\repos\\perfumery\\AddEditProductWindow.axaml.cs",
               "RelativeToolTip": "AddEditProductWindow.axaml.cs",
-              "ViewState": "AgIAAMMAAAAAAAAAAAAuwNQAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAPQAAAAAAAAAAAA/wOwAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-06-11T18:33:15.663Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 8,
               "Title": "UserSession.cs",
               "DocumentMoniker": "C:\\Users\\User\\source\\repos\\perfumery\\UserSession.cs",
               "RelativeDocumentMoniker": "UserSession.cs",
@@ -95,7 +145,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 7,
               "Title": "OrderWindow.axaml.cs",
               "DocumentMoniker": "C:\\Users\\User\\source\\repos\\perfumery\\OrderWindow.axaml.cs",
               "RelativeDocumentMoniker": "OrderWindow.axaml.cs",
@@ -113,9 +163,10 @@
               "RelativeDocumentMoniker": "MainWindow.axaml.cs",
               "ToolTip": "C:\\Users\\User\\source\\repos\\perfumery\\MainWindow.axaml.cs",
               "RelativeToolTip": "MainWindow.axaml.cs",
-              "ViewState": "AgIAAI4AAAAAAAAAAAAswJsAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAKUAAAAAAAAAAADwv7YAAAAnAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-11T17:55:19.052Z"
+              "WhenOpened": "2026-06-11T17:55:19.052Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -127,18 +178,20 @@
               "RelativeToolTip": "Models\\Product.cs",
               "ViewState": "AgIAACMAAAAAAAAAAAAmwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-11T17:16:28.874Z"
+              "WhenOpened": "2026-06-11T17:16:28.874Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "MainWindow.axaml",
               "DocumentMoniker": "C:\\Users\\User\\source\\repos\\perfumery\\MainWindow.axaml",
               "RelativeDocumentMoniker": "MainWindow.axaml",
               "ToolTip": "C:\\Users\\User\\source\\repos\\perfumery\\MainWindow.axaml",
               "RelativeToolTip": "MainWindow.axaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2026-06-11T14:03:46.378Z"
+              "WhenOpened": "2026-06-11T14:03:46.378Z",
+              "EditorCaption": ""
             }
           ]
         },
